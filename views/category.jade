@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        title= title
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        meta(http-equiv="content-type" content="text/html; charset=utf-8")
+        meta(property="og:type" content="article")
+        meta(property="og:url"  content= url)
+        meta(property="og:url"  name="twitter:url" content= url)
+        meta(property="og:title" content= title)
+        link(rel="image_src" href=thumbnail)
+        meta(property="og:title" name="twitter:title" content= title)
+        meta(property="og:description" name="twitter:description" content= title)
+        meta(property="og:description" content= title)
+        meta(name="twitter:card" content= twitterCard)
+        meta(name="description" content= title)
+        meta(name="author" content= title)
+        meta(property="og:image" itemprop="image" content= thumbnail)
+        meta(property="og:image:width" content="1280")
+        meta(property="og:image:height" content="720")
+        meta(name="twitter:image" content= thumbnail)
+        meta(property="og:locale" content="en_GB")
+
+    body
+
+        span(itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject")
+          link(itemprop="url" href=thumbnail)
+          
+        link(itemprop="thumbnailUrl" href=thumbnail)
+        link(itemprop="url" href=thumbnail)
+        h1= title
+        img(src= thumbnail alt= title)
+        p= title
+        
